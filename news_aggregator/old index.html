@@ -1,0 +1,12 @@
+{% block content %}
+    {% for article in articles %}
+    <div><p>{{ article.dt}} {{ article.source }} : {{ article.title }} &nbsp;&nbsp;&nbsp;&nbsp; {{ article.name }}</p>
+        <a href="{{ article.link }}">Read More</a></div>
+    {% endfor %}
+    {% if prev_url %}
+    <a href="{{ prev_url }}">Newer posts</a>
+    {% endif %}
+    {% if next_url %}
+    <a href="{{ next_url }}">Older posts</a>
+    {% endif %}
+{% endblock %}
