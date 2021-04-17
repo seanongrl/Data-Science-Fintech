@@ -1,0 +1,94 @@
+2021-03-26 15:17:37,661 ERROR: Exception on /explore [GET] [in c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sean Ong\python_basics\microblog\app\routes.py", line 164, in explore
+    return render_template("index.html", title='Explore', posts=posts.items,
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\_post.html", line 5, in top-level template code
+    <img src="{{ post.author.avatar(70) }}" />
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'avatar'
+2021-03-26 15:17:40,861 ERROR: Exception on /explore [GET] [in c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sean Ong\python_basics\microblog\app\routes.py", line 164, in explore
+    return render_template("index.html", title='Explore', posts=posts.items,
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "C:\Users\Sean Ong\python_basics\microblog\app\templates\_post.html", line 5, in top-level template code
+    <img src="{{ post.author.avatar(70) }}" />
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'avatar'

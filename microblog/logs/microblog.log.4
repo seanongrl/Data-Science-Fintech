@@ -1,0 +1,83 @@
+2021-03-26 12:28:51,815 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:44]
+2021-03-26 12:39:55,782 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:44]
+2021-03-26 12:39:59,433 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:44]
+2021-03-26 12:46:56,543 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:44]
+2021-03-26 14:47:28,736 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:46]
+2021-03-26 14:47:34,617 ERROR: Exception on /login [POST] [in c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Sean Ong\python_basics\microblog\app\routes.py", line 47, in login
+    return redirect(next_page)
+NameError: name 'redirect' is not defined
+2021-03-26 14:48:51,902 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:46]
+2021-03-26 14:48:55,946 ERROR: Exception on / [GET] [in c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "C:\Users\Sean Ong\python_basics\microblog\app\routes.py", line 91, in before_request
+    current_user.last_seen = datetime.utcnow()
+NameError: name 'datetime' is not defined
+2021-03-26 14:49:11,546 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:46]
+2021-03-26 14:49:12,558 ERROR: Exception on / [GET] [in c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "C:\Users\Sean Ong\python_basics\microblog\app\routes.py", line 93, in before_request
+    db.session.commit()
+NameError: name 'db' is not defined
+2021-03-26 14:50:22,946 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:46]
+2021-03-26 14:50:23,939 ERROR: Exception on / [GET] [in c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\sean ong\appdata\local\programs\python\python39\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Sean Ong\python_basics\microblog\app\routes.py", line 15, in index
+    form = PostForm()
+NameError: name 'PostForm' is not defined
+2021-03-26 14:51:10,060 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:46]
+2021-03-26 15:01:54,140 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:48]
+2021-03-26 15:11:48,450 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:48]
+2021-03-26 15:14:54,655 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:48]
+2021-03-26 15:17:10,861 INFO: Microblog startup [in C:\Users\Sean Ong\python_basics\microblog\app\__init__.py:48]
