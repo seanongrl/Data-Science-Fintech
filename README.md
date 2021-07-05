@@ -30,9 +30,9 @@ BeautifulSoup practices
 
 
 
+## Misc Files
 
-
-## Research on various topics
+Research on various topics
 1. Singapore Commercialisation Funding
 2. Fintech Research
 3. Fintech in Banking
@@ -42,15 +42,15 @@ BeautifulSoup practices
 7. Automated Machine Learning
 8. Quantitative trading
 
-## Learning 
+Learning 
 1. Qlib learning notes
 2. Qlib results
 3. Redis notes
 
-## Latest news in Fintech
+Latest news in Fintech
 1. Latest news in Fintech - May 7
 2. Latest news in Fintech - May 19
 
-## Weekly updates up to Week 20
+Weekly updates up to Week 20
 
 
